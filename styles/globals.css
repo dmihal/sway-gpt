@@ -322,6 +322,8 @@ textarea {
     justify-content: flex-start;
     flex-shrink: 0;
     transform: none;
+    overflow-wrap: anywhere;
+    width: 100%;
 }
 
 .output-content p {

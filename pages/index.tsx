@@ -37,18 +37,18 @@ export default function Home() {
   return (
     <div className="root">
       <Head>
-        <title>Uniswap Data</title>
+        <title>SwayGPT</title>
         <meta name="description" content="AI writing assistant w/ GPT-3" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Uniswap Data</h1>
+            <h1>SwayGPT</h1>
           </div>
 
           <div className="header-subtitle">
-            <h2>Enter a query about Uniswap's data:</h2>
+            <h2>Convert Solidity smart contracts to Sway</h2>
           </div>
         </div>
 
@@ -79,12 +79,10 @@ export default function Home() {
                 </div>
               </div>
               <pre className="output-content">
-                {'Code:\n'}
-                {apiOutput.code}
-                {'\nQuery:\n'}
-                {apiOutput.query}
-                {'\n\nQuery:\n'}
-                {JSON.stringify(apiOutput.output, null, 2)}
+                {'Prompt:\n'}
+                {apiOutput.prompt}
+                {'\Sway:\n'}
+                {apiOutput.sway}
               </pre>
             </div>
           )}
